@@ -1,0 +1,122 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{russell}
+
+% Packages must come AFTER \documentclass
+\usepackage{hyperref}
+% Configure page margins with geometry
+\geometry{left=1.2cm, top=0.6cm, right=1.2cm, bottom=1.0cm, footskip=.3cm}
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% IMPORTANT: Force all colors to be darker
+% \AtBeginDocument{%
+%   % Override all the gray color definitions from russell.cls
+%   \definecolor{darkgray}{HTML}{000000}  % Pure black instead of #333333
+%   \definecolor{gray}{HTML}{000000}      % Pure black instead of #5D5D5D
+%   \definecolor{lightgray}{HTML}{000000} % Pure black instead of #999999
+%   \definecolor{graytext}{HTML}{000000}  % Force graytext to black
+%   \definecolor{text}{HTML}{000000}      % Force text to black
+%   \definecolor{darktext}{HTML}{000000}  % Already black but ensure it
+%   \definecolor{lighttext}{HTML}{000000} % Force lighttext to black
+% }
+
+% Color for highlights
+% russell Colors: russell-emerald, russell-skyblue, russell-red, russell-pink, russell-orange
+%                 russell-nephritis, russell-concrete, russell-darknight, russell-purple
+% \colorlet{russell}{russell-darknight}
+% Uncomment if you would like to specify your own color
+\definecolor{russell}{HTML}{000000}
+
+% Override these color definitions immediately
+% \definecolor{darktext}{HTML}{000000}
+% \definecolor{text}{HTML}{000000}
+% \definecolor{graytext}{HTML}{000000}
+% \definecolor{lighttext}{HTML}{000000}
+
+% Set false if you don't want to highlight section with russell color
+% \setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Additional commands to force darker text in specific elements
+\makeatletter
+% Override the style commands to use pure black
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{black} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{black} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{black} #1}}
+\renewcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{black} #1}}
+\renewcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\scshape\color{black} #1}}
+\renewcommand*{\subentrydatestyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{black} #1}}
+\renewcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{black} #1}}
+\renewcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{black} #1}}
+\renewcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{black} #1}}
+\renewcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{black} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{black} #1}}
+\renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{black} #1}}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Tony}{Siu}
+\position{Founding AI Engineer{\enskip\cdotp\enskip}Multi Modal GenAI researcher{\enskip\cdotp\enskip} Applied Statistics Researcher}
+% \address{1615 N Sydenham St, Philadelphia}
+\email{pysolver33@gmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{my-website-xi-virid.vercel.app/} 
+\github{github.com/Tony363}
+\linkedin{linkedin.com/in/pysolver}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+\twitter{@pysolver33}
+\mobile{+1 267-301-1691}
+
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+% \quote{``Simplicity is deceptively complicated."}
+%-------------------------------------------------------------------------------
+ %	BIBLIOGRAPHY
+ %-------------------------------------------------------------------------------
+\addbibresource{cv/references.bib}
+%-------------------------------------------------------------------------------
+\begin{document}
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter{}{}{}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{cv/summary.tex}
+\input{cv/education.tex}
+
+\input{cv/experience.tex}
+\input{cv/research_projects.tex}
+% \input{cv/achievements.tex}
+\input{cv/publications.tex}
+% \input{cv/interests.tex}
+\input{cv/volunteering.tex}
+% \input{cv/languages.tex}
+
+\input{cv/skills.tex}
+% https://voxel51.com/jd/?4326535005?gh_jid=4326535005
+% \vspace*{\fill}
+% \centering{\textbf{References available upon request.}}
+%-------------------------------------------------------------------------------
+\end{document}

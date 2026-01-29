@@ -57,6 +57,16 @@
 \renewcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{black} #1}}
 \renewcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{black} #1}}
 \renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{black} #1}}
+% Reduce gap between section headers and content
+\renewcommand{\acvSectionContentTopSkip}{0mm}
+% Redefine cventries to remove center environment spacing
+\renewenvironment{cventries}{%
+  \vspace{\acvSectionContentTopSkip}
+  \begin{center}
+  \vspace{-\topsep}% Remove top padding from center
+}{%
+  \end{center}
+}
 \makeatother
 
 %-------------------------------------------------------------------------------

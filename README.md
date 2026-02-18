@@ -14,28 +14,32 @@ LaTeX resume built with a custom document class derived from Awesome-CV.
 
 ```
 .
-├── resume.tex          # Main document (personal info, section imports)
-├── russell.cls         # Custom document class (styles, environments)
-├── cv/                 # Section content files
+├── resume.tex              # Main document (personal info, section imports)
+├── russell.cls             # Custom document class (styles, environments)
+├── resume.pdf              # Compiled resume
+├── profile.png             # Profile photo
+├── resume_preview-1.png    # Resume preview (page 1)
+├── resume_preview-2.png    # Resume preview (page 2)
+├── CLAUDE.md               # Claude Code project instructions
+├── cv/                     # Section content files
+│   ├── achievements.tex
 │   ├── education.tex
 │   ├── experience.tex
-│   ├── publications.tex
-│   ├── volunteering.tex
-│   ├── skills.tex
-│   ├── research_projects.tex
-│   ├── achievements.tex
-│   ├── summary.tex
 │   ├── interests.tex
 │   ├── languages.tex
-│   └── references.bib
-└── fonts/              # Roboto and FontAwesome fonts
+│   ├── publications.tex
+│   ├── references.bib
+│   ├── research_projects.tex
+│   ├── skills.tex
+│   ├── summary.tex
+│   └── volunteering.tex
+└── fonts/                  # Roboto and FontAwesome fonts
 ```
 
 ## Active Sections
 
 Currently enabled in `resume.tex`:
 - Experience
-- Volunteering
 - Education
 - Publications
 

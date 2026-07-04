@@ -1,6 +1,8 @@
 # Tony Siu - Resume
 
-LaTeX resume built with a custom document class derived from Awesome-CV.
+One-page LaTeX resume built with a custom document class derived from Awesome-CV.
+
+Current version highlights Tony's Agent Engineer III role at ZoomInfo, with experience in agent memory tooling infrastructure, agent evaluation runtimes, and self-tuning loops.
 
 ## Preview
 
@@ -18,8 +20,8 @@ LaTeX resume built with a custom document class derived from Awesome-CV.
 ├── russell.cls             # Custom document class (styles, environments)
 ├── resume.pdf              # Compiled resume
 ├── profile.png             # Profile photo
-├── resume_preview-1.png    # Resume preview (page 1)
-├── resume_preview-2.png    # Resume preview (page 2)
+├── resume_preview-1.png    # Resume preview
+├── resume_preview-2.png    # Archived resume preview
 ├── CLAUDE.md               # Claude Code project instructions
 ├── cv/                     # Section content files
 │   ├── achievements.tex

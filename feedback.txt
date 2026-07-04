@@ -1,0 +1,103 @@
+Principal Engineer section
+Original
+Delivered ~60% of core engineering output at a 20-person startup, owning architecture, execution, and delivery
+Missing / implied
+    •    of → core engineering output of a 20-person startup
+    •    Optional conjunction clarity: while owning
+
+Original
+Reduced sprite/GIF rendering from 5s per asset to 0.2s for 78+ concurrent animations
+Missing / implied
+    •    across → animations across 78+ concurrent instances
+
+Original
+Architected & built — Natural-language-to-full GenAI game generation MVP
+Missing / implied
+    •    a → built a natural-language-to-full GenAI game generation MVP
+    •    for → generation MVP for games
+
+Original
+Developed vision-based, promptless agentic loops with long-context, cross-session user memory and task automation
+Missing / implied
+    •    for → loops for long-context…
+    •    with → already present but overloaded — needs parallelism clarity
+
+Original
+Reimplemented bleeding-edge research into production-grade CUA scaffolds and agent runtimes
+Missing / implied
+    •    from → research from ACE, Tongyi AgentFold
+    •    as → runtimes as production systems
+
+Generative AI Engineer – A Pro Inc Solutions
+Original
+Architected end-to-end platforms for AI Influencer & KOL generation
+Missing / implied
+    •    the → platforms for the generation of…
+
+Original
+delivering AI-driven digital marketing as a service
+Missing / implied
+    •    by → delivering by providing…
+    •    to → marketing to clients
+
+Original
+Researched and engineered SOTA multimodal, multi-step generative models with preference optimization
+Missing / implied
+    •    for → models for preference optimization
+    •    to → optimization to align behavior
+
+Original
+Designed automated evaluation frameworks to assess quality, safety, and brand alignment
+Missing / implied
+    •    of → alignment of generated outputs
+
+Original
+Achieved 100× cost reduction by orchestrating distributed training and inference pipelines
+Missing / implied
+    •    across → pipelines across heterogeneous compute
+
+Multi-Modal Generative AI Researcher – Temple CST
+Original
+Authored multiple papers submitted to IEEE, CAIP, and ECAI
+Missing / implied
+    •    on → papers on multimodal computer vision
+
+Original
+Improved engagement video QA performance by 6%
+Missing / implied
+    •    on → performance on engagement video QA tasks
+
+Original
+Achieved 6% in- and out-of-sample generalization gains
+Missing / implied
+    •    through → gains through Direct Preference Optimization
+
+Original
+Delivered up to 9% performance improvements using modern preference alignment methods
+Missing / implied
+    •    across → improvements across tasks
+
+Original
+Evaluated SOTA video–language models across DAiSEE, EngageNet, and SED datasets
+✅ Grammatically complete — no missing connectors here
+
+Google UR – Computer Vision Research Lead
+Original
+Led computer vision research to improve Google Pixel automated UI defect detection pipelines
+Missing / implied
+    •    for → research for improving…
+
+Original
+Secured continued Google Level-2 sponsorship via novel multimodal computer vision research outcomes
+Missing / implied
+    •    through → sponsorship through novel outcomes
+
+Original
+Boosted UI flicker detection from 43% to 98% precision–recall
+Missing / implied
+    •    in → 98% precision–recall in detection
+
+Original
+Reduced model training time 20× through informed weight initialization
+Missing / implied
+    •    by → reduced time by 20×

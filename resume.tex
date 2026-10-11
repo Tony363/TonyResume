@@ -7,7 +7,7 @@
 % Packages must come AFTER \documentclass
 \usepackage{hyperref}
 % Configure page margins with geometry
-\geometry{left=1.2cm, top=0.6cm, right=1.2cm, bottom=1.0cm, footskip=.3cm}
+\geometry{left=1.2cm, top=0.4cm, right=1.2cm, bottom=0.3cm, footskip=.1cm}
 % Specify the location of the included fonts
 \fontdir[fonts/]
 
@@ -45,9 +45,9 @@
 % Additional commands to force darker text in specific elements
 \makeatletter
 % Override the style commands to use pure black
-\renewcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{black} #1}}
-\renewcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{black} #1}}
-\renewcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{black} #1}}
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{8.75pt}{1em}\bodyfontlight\upshape\color{black} #1}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8.8pt}{1em}\bodyfont\color{black} #1}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{7.8pt}{1em}\bodyfontlight\slshape\color{black} #1}}
 \renewcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{black} #1}}
 \renewcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\scshape\color{black} #1}}
 \renewcommand*{\subentrydatestyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{black} #1}}
@@ -59,7 +59,7 @@
 \renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{black} #1}}
 % Reduce gap between section headers and content
 \renewcommand{\acvSectionContentTopSkip}{0mm}
-\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionTopSkip}{1.0mm}
 % Redefine cventries to remove center environment spacing
 \renewenvironment{cventries}{%
   \vspace{\acvSectionContentTopSkip}
@@ -70,7 +70,7 @@
 }
 % Tighter spacing between entries
 \renewcommand*{\cventry}[5]{%
-  \vspace{0.4mm}
+  \vspace{0.1mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -80,19 +80,19 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
-  \par\vspace{0.4mm}
+  \par\vspace{0.1mm}
 }
 % Tighter bullet point spacing
 \renewenvironment{cvitems}{%
-  \vspace{-4.5mm}
+  \vspace{-5.2mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=-1pt]
+  \begin{itemize}[leftmargin=2ex, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=-3pt]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-5.0mm}
+  \vspace{-6.2mm}
 }
 \makeatother
 
